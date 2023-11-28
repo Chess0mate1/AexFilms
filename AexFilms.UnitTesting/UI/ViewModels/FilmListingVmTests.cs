@@ -8,8 +8,6 @@ using Chess0Mate1.UnitTesting.Core.Extensions;
 using Chess0Mate1.UnitTesting.Core.Stubs;
 using Chess0Mate1.ViewModel.Core.Services;
 
-using CommunityToolkit.Mvvm.Messaging;
-
 using NSubstitute;
 using NSubstitute.ExceptionExtensions;
 
