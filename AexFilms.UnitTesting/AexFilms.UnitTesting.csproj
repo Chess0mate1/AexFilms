@@ -10,7 +10,6 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="Chess0Mate1.UnitTesting.Core" Version="1.0.0" />
     <PackageReference Include="DeepEqual" Version="4.2.1" />
     <PackageReference Include="Meziantou.Xunit.ParallelTestFramework" Version="2.1.0">
       <TreatAsUsed>true</TreatAsUsed>
