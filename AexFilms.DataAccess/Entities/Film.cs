@@ -13,6 +13,11 @@ public class Film : EntityBase
     public required string Title { get; set; }
 
     /// <summary>
+    ///     Gets or sets the binary image data associated with the film
+    /// </summary>
+    public required byte[] ImageData { get; set; }
+
+    /// <summary>
     ///     Gets or initializes the collection of genres associated with the film.
     /// </summary>
     public required ICollection<Genre> GenreCollection { get; init; }
