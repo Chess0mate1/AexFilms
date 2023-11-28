@@ -6,4 +6,8 @@
     <Nullable>enable</Nullable>
   </PropertyGroup>
 
+  <ItemGroup>
+    <PackageReference Include="Chess0Mate1.Entity.Core" Version="1.0.0" />
+  </ItemGroup>
+
 </Project>
