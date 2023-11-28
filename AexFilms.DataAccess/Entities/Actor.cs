@@ -11,7 +11,7 @@ public class Actor : EntityBase
     /// <summary>
     ///     Gets or sets the full name of the actor/>
     /// </summary>
-    public required string FullName { get; set; };
+    public required string FullName { get; set; }
 
     /// <summary>
     ///     Gets or initializes the collection of films associated with the actor with the passed or default value.
