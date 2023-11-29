@@ -4,7 +4,7 @@
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
     xmlns:sfCore="clr-namespace:Syncfusion.Maui.Core;assembly=Syncfusion.Maui.Core"
     xmlns:sfListView="clr-namespace:Syncfusion.Maui.ListView;assembly=Syncfusion.Maui.ListView"
-    x:Class="AexFilms.UI.Resources.Styles.ExtendedStyles">
+    x:Class="AexFilms.View.Maui.Resources.Styles.ExtendedStyles">
 
     <!--does not work without key-->
     <Style TargetType="sfCore:SfTextInputLayout" x:Key="sfTextInputLayoutStyle">
