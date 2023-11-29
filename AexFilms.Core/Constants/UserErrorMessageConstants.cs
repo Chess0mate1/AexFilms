@@ -24,4 +24,24 @@ public static class UserErrorMessageConstants
     ///     Message for a storage read error.
     /// </summary>
     public const string StorageRead = "Не удалось считать данные с хранилища";
+
+    /// <summary>
+    ///     Message for a configuration read error.
+    /// </summary>
+    public const string ConfigRead = "Не удалось считать данные с файла конфигурации";
+
+    /// <summary>
+    ///     Message for an invalid configuration.
+    /// </summary>
+    public const string InvalidConfig = "Получены неверные значения с файла конфигурации";
+
+    /// <summary>
+    ///     Message for an app resource get error.
+    /// </summary>
+    public const string AppResourceGet = "Не удалось получить ресурс";
+
+    /// <summary>
+    ///     Message for an app filter applying error.
+    /// </summary>
+    public const string FilterApply = "Не удалось применить фильтр";
 }

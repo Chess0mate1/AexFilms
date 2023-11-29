@@ -1,0 +1,68 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ResourceDictionary 
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:sfCore="clr-namespace:Syncfusion.Maui.Core;assembly=Syncfusion.Maui.Core"
+    xmlns:sfListView="clr-namespace:Syncfusion.Maui.ListView;assembly=Syncfusion.Maui.ListView"
+    x:Class="AexFilms.UI.Resources.Styles.ExtendedStyles">
+
+    <!--does not work without key-->
+    <Style TargetType="sfCore:SfTextInputLayout" x:Key="sfTextInputLayoutStyle">
+        <Setter Property="HeightRequest" Value="90" />
+        <Setter Property="ContainerType" Value="Outlined" />
+        <Setter Property="OutlineCornerRadius" Value="15" />
+        <Setter Property="UnfocusedStrokeThickness" Value="0.1" />
+        <Setter Property="FocusedStrokeThickness" Value="1" />
+    </Style>
+    <Style TargetType="Entry" >
+        <Setter Property="FontSize" Value="19" />
+        <Setter Property="FontFamily" Value="OpenSansRegular" />
+        <Setter Property="VerticalOptions" Value="Center" />
+    </Style>
+
+    <Style TargetType="sfCore:SfChipGroup" >
+        <Setter Property="ChipPadding" Value="2,2,2,2" />
+        <Setter Property="Padding" Value="3,0,3,4" />
+        <Setter Property="ChipStrokeThickness" Value="0.5" />
+        <Setter Property="ChipBackground" Value="White" />
+        <Setter Property="ChipTextColor" Value="Black" />
+        <Setter Property="SelectionIndicatorColor" Value="White" />
+        <Setter Property="ChipCornerRadius" Value="15" />
+    </Style>
+
+    <!--does not work as ChipLayout in SfChipGroup style-->
+    <Style TargetType="FlexLayout" x:Key="sfChipGroupFlexLayout">
+        <Setter Property="Direction" Value="Row" />
+        <Setter Property="Wrap" Value="Wrap" />
+        <Setter Property="VerticalOptions" Value="Fill" />
+        <Setter Property="HorizontalOptions" Value="Fill" />
+    </Style>
+
+    <Style TargetType="BoxView" x:Key="dataSeparator">
+        <Setter Property="HeightRequest" Value="8" />
+        <Setter Property="WidthRequest" Value="220" />
+        <Setter Property="CornerRadius" Value="45" />
+        <Setter Property="Margin" Value="30,10" />
+    </Style>
+
+    <Style TargetType="BoxView" x:Key="blockSeparator">
+        <Setter Property="HeightRequest" Value="5" />
+        <Setter Property="Color" Value="Gainsboro" />
+    </Style>
+
+    <Style TargetType="Border" >
+        <Setter Property="StrokeThickness" Value="0" />
+        <Setter Property="Stroke" Value="Gainsboro" />
+    </Style>
+    <Style TargetType="Border" x:Key="pageContentDecorator">
+        <Setter Property="StrokeShape" Value="RoundRectangle 35,35,35,35" />
+        <Setter Property="Margin" Value="20,5" />
+        <Setter Property="Background" Value="White" />
+    </Style>
+
+    <!--does not work without key-->
+    <Style TargetType="ContentPage" x:Key="contentPageStyle" >
+        <Setter Property="Background" Value="Gainsboro" />
+    </Style>
+    
+</ResourceDictionary>

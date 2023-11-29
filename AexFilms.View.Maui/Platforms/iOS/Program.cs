@@ -2,7 +2,7 @@
 
 using UIKit;
 
-namespace AexFilms.View.Maui
+namespace AexFilms.View.Maui.Platforms.iOS
 {
     public class Program
     {

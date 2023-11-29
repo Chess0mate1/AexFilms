@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:toolkit="http://schemas.microsoft.com/dotnet/2022/maui/toolkit"
+             xmlns:nestedView="clr-namespace:AexFilms.View.Maui.Views.Filtering.Filters"
+             xmlns:vm="clr-namespace:AexFilms.ViewModel.ViewModels.Filtering;assembly=AexFilms.ViewModel"
+             x:Class="AexFilms.View.Maui.Views.Filtering.FiltersSelectionPage"
+             x:DataType="vm:IFiltersSelectionVm"  
+             Title="Фильтры"
+             Style="{StaticResource contentPageStyle}">
+
+    <ContentPage.Content>
+        <ScrollView>
+            <Border Style="{StaticResource pageContentDecorator}">
+                <VerticalStackLayout >
+                    <nestedView:TitleFilterSelectionView BindingContext="{Binding TitleFilterSelectionVm}" />
+
+                    <BoxView Style="{StaticResource blockSeparator}"/>
+
+                    <nestedView:GenreCollectionFilterSelectionView BindingContext="{Binding GenreCollectionFilterSelectionVm}" />
+
+                    <BoxView Style="{StaticResource blockSeparator}" />
+
+                    <nestedView:ActorCollectionFilterSelectionView BindingContext="{Binding ActorCollectionFilterSelectionVm}"  />
+                </VerticalStackLayout>
+            </Border>
+        </ScrollView>
+    </ContentPage.Content>
+
+    <ContentPage.Behaviors>
+        <toolkit:EventToCommandBehavior EventName="Appearing" 
+                                        Command="{Binding AppearingCommand}" />
+    </ContentPage.Behaviors>
+
+    <Shell.BackButtonBehavior>
+        <BackButtonBehavior Command="{Binding GoingBackCommand}"/>
+    </Shell.BackButtonBehavior>
+
+    <ContentPage.Resources>
+        <Style TargetType="ContentView" ApplyToDerivedTypes="True" >
+            <Setter Property="Margin" Value="10" />
+        </Style>
+    </ContentPage.Resources>
+</ContentPage>

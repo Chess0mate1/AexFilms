@@ -5,13 +5,11 @@
     xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
     xmlns:local="clr-namespace:AexFilms.View.Maui"
-    xmlns:view="clr-namespace:AexFilms.View.Maui.Views"
+    xmlns:view="clr-namespace:AexFilms.View.Maui.Views.Listing"
     Shell.FlyoutBehavior="Disabled"
-    Title="AexFilms.View.Maui">
+    Shell.BackgroundColor="Gainsboro" 
+    Shell.TitleColor="DarkGrey">
 
-    <ShellContent
-        Title="Home"
-        ContentTemplate="{DataTemplate view:FilmListingPage}"
-        Route="MainPage" />
+    <ShellContent ContentTemplate="{DataTemplate view:FilmDataListingPage}" />
 
 </Shell>

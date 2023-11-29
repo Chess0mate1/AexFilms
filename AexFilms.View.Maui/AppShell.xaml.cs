@@ -1,5 +1,7 @@
-﻿using AexFilms.View.Maui.Views;
-using AexFilms.ViewModel.ViewModels;
+﻿using AexFilms.View.Maui.Views.Filtering;
+using AexFilms.View.Maui.Views.Listing;
+using AexFilms.ViewModel.ViewModels.Filtering;
+using AexFilms.ViewModel.ViewModels.Listing;
 
 using System.ComponentModel;
 
@@ -10,7 +12,9 @@ namespace AexFilms.View.Maui
         public AppShell()
         {
             InitializeComponent();
-            ResisterViewModelRouteToPage<FilmListingVm, FilmListingPage>();
+
+            ResisterViewModelRouteToPage<IFilmDataListingVm, FilmDataListingPage>();
+            ResisterViewModelRouteToPage<IFiltersSelectionVm, FiltersSelectionPage>();
         }
 
         private static void ResisterViewModelRouteToPage<TViewModel, TPage>()

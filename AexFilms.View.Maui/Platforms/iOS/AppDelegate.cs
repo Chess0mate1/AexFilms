@@ -1,6 +1,6 @@
 ﻿using Foundation;
 
-namespace AexFilms.View.Maui
+namespace AexFilms.View.Maui.Platforms.iOS
 {
     [Register("AppDelegate")]
     public class AppDelegate : MauiUIApplicationDelegate

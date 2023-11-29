@@ -28,6 +28,7 @@
     <PackageReference Include="Chess0Mate1.DataAccess.Repository.Core" Version="1.0.0" />
     <PackageReference Include="Chess0Mate1.Entity.Core" Version="1.0.0" />
     <PackageReference Include="Chess0Mate1.Factory.Core" Version="1.0.0" />
+    <PackageReference Include="LinqKit" Version="1.2.5" />
     <PackageReference Include="Microsoft.EntityFrameworkCore" Version="8.0.0" />
   </ItemGroup>
 
