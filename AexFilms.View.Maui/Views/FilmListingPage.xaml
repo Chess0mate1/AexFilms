@@ -23,34 +23,36 @@
                                 <Image Source="{Binding ImageData, Converter={toolkit:ByteArrayToImageSourceConverter}}" />
                             </Border>
 
-                            <BoxView Style="{StaticResource dataSeparator}"/>
+                            <BoxView HeightRequest="8" WidthRequest="220"
+                                     CornerRadius="45"
+                                     Margin="30,10"/>
 
                             <Grid RowDefinitions="*,*,*" ColumnDefinitions="4*,8*"
                                   Margin="10,20,0,0" >
                                 <Label Text="Название" 
-                                       Style="{StaticResource LabelTitle}"
+                                       Style="{StaticResource labelTitle}"
                                        Grid.Row="0" Grid.Column="0"/>
 
                                 <Label Text="{Binding Title}" 
-                                       Style="{StaticResource LabelDescription}"
+                                       Style="{StaticResource labelDescription}"
                                        Grid.Row="0" Grid.Column="1"/>
 
 
                                 <Label Text="Жанры" 
-                                       Style="{StaticResource LabelTitle}"
+                                       Style="{StaticResource labelTitle}"
                                        Grid.Row="1" Grid.Column="0"/>
 
                                 <Label Text="{Binding GenreCollection, Converter={converter:GenreCollectionToStringConverter}}"
-                                       Style="{StaticResource LabelDescription}"
+                                       Style="{StaticResource labelDescription}"
                                        Grid.Row="1" Grid.Column="1"/>
 
 
                                 <Label Text="Актёры" 
-                                       Style="{StaticResource LabelTitle}"
+                                       Style="{StaticResource labelTitle}"
                                        Grid.Row="2" Grid.Column="0"/>
 
                                 <Label Text="{Binding ActorCollection, Converter={converter:ActorCollectionToStringConverter}}"
-                                       Style="{StaticResource LabelDescription}"
+                                       Style="{StaticResource labelDescription}"
                                        Grid.Row="2" Grid.Column="1"/>
                             </Grid>
                         </VerticalStackLayout>
@@ -65,12 +67,12 @@
     </ContentPage.Behaviors>
 
     <ContentPage.Resources>
-        <Style TargetType="Label" x:Key="LabelTitle">
+        <Style TargetType="Label" x:Key="labelTitle">
             <Setter Property="VerticalTextAlignment" Value="Start"/>
             <Setter Property="HorizontalTextAlignment" Value="Start"/>
             <Setter Property="Margin" Value="0,0,0,20"/>
         </Style>
-        <Style TargetType="Label" x:Key="LabelDescription">
+        <Style TargetType="Label" x:Key="labelDescription">
             <Setter Property="VerticalTextAlignment" Value="Start"/>
             <Setter Property="HorizontalTextAlignment" Value="Center"/>
         </Style>
