@@ -1,7 +1,7 @@
 ﻿using AexFilms.DataAccess.Entities;
 using AexFilms.View.Maui.Converters;
 
-namespace AexFilms.UnitTesting.UI.Converters;
+namespace AexFilms.UnitTesting.View.Maui.Converters;
 
 public class ActorCollectionToStringConverterTests
 {

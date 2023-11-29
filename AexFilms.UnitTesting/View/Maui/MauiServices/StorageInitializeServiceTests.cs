@@ -10,7 +10,7 @@ using Chess0Mate1.ViewModel.Core.Services;
 using NSubstitute;
 using NSubstitute.ExceptionExtensions;
 
-namespace AexFilms.UnitTesting.UI.MauiServices;
+namespace AexFilms.UnitTesting.View.Maui.MauiServices;
 
 public class StorageInitializeServiceTests
 {
