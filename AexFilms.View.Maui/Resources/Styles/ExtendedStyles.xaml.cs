@@ -1,4 +1,4 @@
-namespace AexFilms.UI.Resources.Styles;
+namespace AexFilms.View.Maui.Resources.Styles;
 
 public partial class ExtendedStyles : ResourceDictionary
 {

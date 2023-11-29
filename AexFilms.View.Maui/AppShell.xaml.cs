@@ -5,23 +5,22 @@ using AexFilms.ViewModel.ViewModels.Listing;
 
 using System.ComponentModel;
 
-namespace AexFilms.View.Maui
+namespace AexFilms.View.Maui;
+
+public partial class AppShell : Shell
 {
-    public partial class AppShell : Shell
+    public AppShell()
     {
-        public AppShell()
-        {
-            InitializeComponent();
+        InitializeComponent();
 
-            ResisterViewModelRouteToPage<IFilmDataListingVm, FilmDataListingPage>();
-            ResisterViewModelRouteToPage<IFiltersSelectionVm, FiltersSelectionPage>();
-        }
+        ResisterViewModelRouteToPage<IFilmDataListingVm, FilmDataListingPage>();
+        ResisterViewModelRouteToPage<IFiltersSelectionVm, FiltersSelectionPage>();
+    }
 
-        private static void ResisterViewModelRouteToPage<TViewModel, TPage>()
-            where TViewModel : INotifyPropertyChanged
-            where TPage : TemplatedPage
-        {
-            Routing.RegisterRoute(typeof(TViewModel).Name, typeof(TPage));
-        }
+    private static void ResisterViewModelRouteToPage<TViewModel, TPage>()
+        where TViewModel : INotifyPropertyChanged
+        where TPage : TemplatedPage
+    {
+        Routing.RegisterRoute(typeof(TViewModel).Name, typeof(TPage));
     }
 }
