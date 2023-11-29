@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentView xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:toolkit="http://schemas.microsoft.com/dotnet/2022/maui/toolkit"
+             xmlns:sfCore="clr-namespace:Syncfusion.Maui.Core;assembly=Syncfusion.Maui.Core"
+             xmlns:vm="clr-namespace:AexFilms.ViewModel.ViewModels.Filtering.Filters.GenreFilter;assembly=AexFilms.ViewModel"
+             x:Class="AexFilms.View.Maui.Views.Filtering.Filters.GenreCollectionFilterSelectionView"
+             x:DataType="vm:IGenreCollectionFilterSelectionVm">
+    
+    <Border StrokeShape="RoundRectangle 15,0,0,15" 
+            BackgroundColor="Lavender">
+        <sfCore:SfChipGroup ItemsSource="{Binding GenreCollection}"
+                            SelectedItem="{Binding SelectedGenreCollection}" 
+                            DisplayMemberPath="Name" 
+                            ChipType="Filter" >
+            <sfCore:SfChipGroup.Behaviors>
+                <toolkit:EventToCommandBehavior Command="{Binding GenreSelectedChangedCommand}" EventName="SelectionChanged" />
+            </sfCore:SfChipGroup.Behaviors>
+            
+            <VisualStateManager.VisualStateGroups>
+                <VisualStateGroup x:Name="CommonStates">
+                    <VisualState x:Name="Normal">
+                        <VisualState.Setters>
+                            <Setter Property="ChipTextColor" Value="Black" />
+                            <Setter Property="ChipBackground" Value="White" />
+                        </VisualState.Setters>
+                    </VisualState>
+                    <VisualState x:Name="Selected">
+                        <VisualState.Setters>
+                            <Setter Property="ChipTextColor" Value="White" />
+                            <Setter Property="ChipBackground" Value="#512dcd" />
+                        </VisualState.Setters>
+                    </VisualState>
+                </VisualStateGroup>
+            </VisualStateManager.VisualStateGroups>
+
+            <sfCore:SfChipGroup.ChipLayout>
+                <FlexLayout Style="{StaticResource sfChipGroupFlexLayout}"/>
+            </sfCore:SfChipGroup.ChipLayout>
+        </sfCore:SfChipGroup>
+    </Border>
+    
+</ContentView>

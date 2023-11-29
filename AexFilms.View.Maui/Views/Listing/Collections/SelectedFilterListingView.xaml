@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentView xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"             
+             xmlns:toolkit="http://schemas.microsoft.com/dotnet/2022/maui/toolkit"
+             xmlns:sfCore="clr-namespace:Syncfusion.Maui.Core;assembly=Syncfusion.Maui.Core"
+             xmlns:converter="clr-namespace:Chess0Mate1.View.Maui.Core.Converters;assembly=Chess0Mate1.View.Maui.Core" 
+             xmlns:vm="clr-namespace:AexFilms.ViewModel.ViewModels.Listing.Collections.SelectedFilter;assembly=AexFilms.ViewModel" 
+             x:Class="AexFilms.View.Maui.Views.Listing.Collections.SelectedFilterListingView"
+             x:DataType="vm:ISelectedFilterListingVm" >
+    
+    <Border StrokeShape="RoundRectangle 15,15,15,15" 
+            BackgroundColor="LavenderBlush">
+        <sfCore:SfChipGroup ItemsSource="{Binding ActiveFilterCollection}"
+                            DisplayMemberPath="DisplayName" >
+            <sfCore:SfChipGroup.Behaviors>
+                <toolkit:EventToCommandBehavior EventName="ItemRemoved" Command="{Binding FilterRemovedCommand}"
+                                                EventArgsConverter="{converter:SelectionChangedEventArgsToRemovedItemConverter}" />
+            </sfCore:SfChipGroup.Behaviors>
+
+            <sfCore:SfChipGroup.ChipLayout>
+                <FlexLayout Style="{StaticResource sfChipGroupFlexLayout}"/>
+            </sfCore:SfChipGroup.ChipLayout>
+        </sfCore:SfChipGroup>
+    </Border>
+    
+</ContentView>
