@@ -64,6 +64,7 @@
 
 	<ItemGroup>
 	  <None Remove="Resources\Images\advanced_search.png" />
+	  <None Remove="Resources\Images\error.jpg" />
 	  <None Remove="Resources\Images\nothing_to_show.jpg" />
 	</ItemGroup>
 
@@ -90,6 +91,9 @@
 
 	<ItemGroup>
 	  <MauiXaml Update="Resources\Styles\ExtendedStyles.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="Views\Error\InitializationErrorPage.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
 	  <MauiXaml Update="Views\Filltering\FiltersSelectionPage.xaml">

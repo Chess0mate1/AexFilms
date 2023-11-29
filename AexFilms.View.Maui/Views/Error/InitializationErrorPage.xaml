@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:toolkit="http://schemas.microsoft.com/dotnet/2022/maui/toolkit"
+             xmlns:vm="clr-namespace:AexFilms.ViewModel.ViewModels.Error;assembly=AexFilms.ViewModel"
+             x:Class="AexFilms.View.Maui.Views.Error.InitializationErrorPage"
+             x:DataType="vm:IInitializationErrorVm"
+             Background="White"
+             Title="Ошибка">
+
+    <ContentPage.Content>
+        <VerticalStackLayout VerticalOptions="Center" HorizontalOptions="Center">
+            <Label Text="{Binding ErrorMessage}"
+                   FontSize="Large" 
+                   LineBreakMode="WordWrap"
+                   Margin="10,0,10,70"
+                   VerticalTextAlignment="Center" HorizontalTextAlignment="Center"/>
+            <Image Source="error" 
+                   Margin="25,0,0,0"
+                   Scale="1.5" />
+        </VerticalStackLayout>
+    </ContentPage.Content>
+
+    <ContentPage.Behaviors>
+        <toolkit:EventToCommandBehavior EventName="Appearing" Command="{Binding AppearingCommand}" />
+    </ContentPage.Behaviors>
+    
+</ContentPage>
