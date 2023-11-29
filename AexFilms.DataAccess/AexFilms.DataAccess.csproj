@@ -6,4 +6,29 @@
     <Nullable>enable</Nullable>
   </PropertyGroup>
 
+  <ItemGroup>
+    <None Remove="Resources\FilmImages\dark_knight.jpg" />
+    <None Remove="Resources\FilmImages\godfather.jpg" />
+    <None Remove="Resources\FilmImages\list_of_schindler.jpg" />
+    <None Remove="Resources\FilmImages\lord_of_rings_return_of_king.jpg" />
+    <None Remove="Resources\FilmImages\shawshank_redemption.jpg" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\FilmImages\dark_knight.jpg" />
+    <EmbeddedResource Include="Resources\FilmImages\godfather.jpg" />
+    <EmbeddedResource Include="Resources\FilmImages\list_of_schindler.jpg" />
+    <EmbeddedResource Include="Resources\FilmImages\lord_of_rings_return_of_king.jpg" />
+    <EmbeddedResource Include="Resources\FilmImages\shawshank_redemption.jpg" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Chess0Mate1.DataAccess.EntityFramework.Core" Version="1.0.0" />
+    <PackageReference Include="Chess0Mate1.DataAccess.ManifestLoader.Core" Version="1.0.0" />
+    <PackageReference Include="Chess0Mate1.DataAccess.Repository.Core" Version="1.0.0" />
+    <PackageReference Include="Chess0Mate1.Entity.Core" Version="1.0.0" />
+    <PackageReference Include="Chess0Mate1.Factory.Core" Version="1.0.0" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="8.0.0" />
+  </ItemGroup>
+
 </Project>

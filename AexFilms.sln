@@ -11,6 +11,13 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AexFilms.DataAccess", "AexF
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AexFilms.Core", "AexFilms.Core\AexFilms.Core.csproj", "{47EC8B24-7D8E-43C2-9CDB-F94CA24E4EEA}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AexFilms.ViewModel", "AexFilms.ViewModel\AexFilms.ViewModel.csproj", "{E515CA82-37C0-4E68-BF54-49A4948038CE}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{AC536EC3-1831-47B1-B6B4-D0D145B80D20}"
+	ProjectSection(SolutionItems) = preProject
+		.editorconfig = .editorconfig
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -35,6 +42,10 @@ Global
 		{47EC8B24-7D8E-43C2-9CDB-F94CA24E4EEA}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{47EC8B24-7D8E-43C2-9CDB-F94CA24E4EEA}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{47EC8B24-7D8E-43C2-9CDB-F94CA24E4EEA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E515CA82-37C0-4E68-BF54-49A4948038CE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E515CA82-37C0-4E68-BF54-49A4948038CE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E515CA82-37C0-4E68-BF54-49A4948038CE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E515CA82-37C0-4E68-BF54-49A4948038CE}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
