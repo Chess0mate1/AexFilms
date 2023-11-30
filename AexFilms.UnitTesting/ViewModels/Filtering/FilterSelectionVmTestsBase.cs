@@ -1,5 +1,4 @@
 ﻿using AexFilms.UnitTesting.Stubs;
-using AexFilms.UnitTesting.ViewModels;
 using AexFilms.ViewModel.Filters;
 using AexFilms.ViewModel.Messages;
 using AexFilms.ViewModel.ViewModels.Filtering.Filters;

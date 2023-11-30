@@ -1,5 +1,4 @@
 ﻿using AexFilms.ViewModel.Filters;
-using AexFilms.ViewModel.ViewModels.Filtering.Filters;
 
 using CommunityToolkit.Mvvm.ComponentModel;
 using CommunityToolkit.Mvvm.Input;
