@@ -7,6 +7,7 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <None Remove="AppSettings.json" />
     <None Remove="Resources\FilmImages\dark_knight.jpg" />
     <None Remove="Resources\FilmImages\godfather.jpg" />
     <None Remove="Resources\FilmImages\list_of_schindler.jpg" />
@@ -15,6 +16,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <EmbeddedResource Include="AppSettings.json" />
     <EmbeddedResource Include="Resources\FilmImages\dark_knight.jpg" />
     <EmbeddedResource Include="Resources\FilmImages\godfather.jpg" />
     <EmbeddedResource Include="Resources\FilmImages\list_of_schindler.jpg" />
@@ -23,6 +25,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <PackageReference Include="Chess0Mate1.DataAccess.AppSettings.Core" Version="1.0.0" />
     <PackageReference Include="Chess0Mate1.DataAccess.EntityFramework.Core" Version="1.0.0" />
     <PackageReference Include="Chess0Mate1.DataAccess.ManifestLoader.Core" Version="1.0.0" />
     <PackageReference Include="Chess0Mate1.DataAccess.Repository.Core" Version="1.0.0" />
@@ -30,6 +33,7 @@
     <PackageReference Include="Chess0Mate1.Factory.Core" Version="1.0.0" />
     <PackageReference Include="LinqKit" Version="1.2.5" />
     <PackageReference Include="Microsoft.EntityFrameworkCore" Version="8.0.0" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Sqlite" Version="8.0.0" />
   </ItemGroup>
 
 </Project>
