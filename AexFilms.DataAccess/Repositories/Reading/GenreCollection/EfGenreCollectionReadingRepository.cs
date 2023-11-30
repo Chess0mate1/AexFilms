@@ -23,7 +23,7 @@ public class EfGenreCollectionReadingRepository(IDbContextFactory<FilmContext> f
             await using var context = CreateContext();
 
             return await context.GenreCollection
-                .Where(genre => genre.Name.Contains(input))
+                .Where(genre => genre.LowercaseName.Contains(input))
                 .ToListAsync();
         }
         catch (Exception exception)
