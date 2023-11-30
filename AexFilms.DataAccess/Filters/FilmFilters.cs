@@ -15,10 +15,10 @@ public record class FilmFilters
     /// <summary>
     ///     Gets or initializes a collection of genres to filter films by.
     /// </summary>
-    public IEnumerable<Genre> GenreCollection { get; set; } = new List<Genre>();
+    public IEnumerable<Genre> GenreCollection { get; init; } = new List<Genre>();
 
     /// <summary>
     ///     Gets or initializes a collection of actors to filter films by.
     /// </summary>
-    public IEnumerable<Actor> ActorCollection { get; set; } = new List<Actor>();
+    public IEnumerable<Actor> ActorCollection { get; init; } = new List<Actor>();
 }
