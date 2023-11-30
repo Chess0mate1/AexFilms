@@ -26,14 +26,13 @@
 
   <ItemGroup>
     <PackageReference Include="Chess0Mate1.DataAccess.AppSettings.Core" Version="1.0.0" />
-    <PackageReference Include="Chess0Mate1.DataAccess.EntityFramework.Core" Version="1.0.0" />
+    <PackageReference Include="Chess0Mate1.DataAccess.EntityFramework.Core" Version="1.0.1" />
     <PackageReference Include="Chess0Mate1.DataAccess.ManifestLoader.Core" Version="1.0.0" />
     <PackageReference Include="Chess0Mate1.DataAccess.Repository.Core" Version="1.0.0" />
     <PackageReference Include="Chess0Mate1.Entity.Core" Version="1.0.0" />
     <PackageReference Include="Chess0Mate1.Factory.Core" Version="1.0.0" />
     <PackageReference Include="LinqKit" Version="1.2.5" />
-    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="8.0.0" />
-    <PackageReference Include="Microsoft.EntityFrameworkCore.Sqlite" Version="8.0.0" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Sqlite" Version="7.0.14" />
   </ItemGroup>
 
 </Project>
