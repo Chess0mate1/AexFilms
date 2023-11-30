@@ -35,14 +35,45 @@
 		<SupportedOSPlatformVersion Condition="$([MSBuild]::GetTargetPlatformIdentifier('$(TargetFramework)')) == 'windows'">10.0.17763.0</SupportedOSPlatformVersion>
 		<TargetPlatformMinVersion Condition="$([MSBuild]::GetTargetPlatformIdentifier('$(TargetFramework)')) == 'windows'">10.0.17763.0</TargetPlatformMinVersion>
 		<SupportedOSPlatformVersion Condition="$([MSBuild]::GetTargetPlatformIdentifier('$(TargetFramework)')) == 'tizen'">6.5</SupportedOSPlatformVersion>
+		<EnforceCodeStyleInBuild>True</EnforceCodeStyleInBuild>
+		<AnalysisLevel>latest</AnalysisLevel>
 	</PropertyGroup>
 
 	<PropertyGroup Condition="'$(Configuration)|$(TargetFramework)|$(Platform)'=='Release|net8.0-android|AnyCPU'">
-	  <EnableLLVM>False</EnableLLVM>
+	  <CheckForOverflowUnderflow>True</CheckForOverflowUnderflow>
+	  <ApplicationTitle>Aex Films</ApplicationTitle>
+	  <ApplicationId>com.chess0mate1.aexfilms.view.maui</ApplicationId>
 	</PropertyGroup>
 
 	<PropertyGroup Condition="'$(Configuration)|$(TargetFramework)|$(Platform)'=='Debug|net8.0-android|AnyCPU'">
 	  <EnableLLVM>False</EnableLLVM>
+	  <CheckForOverflowUnderflow>True</CheckForOverflowUnderflow>
+	  <ApplicationTitle>Aex Films</ApplicationTitle>
+	  <ApplicationId>com.chess0mate1.aexfilms.view.maui</ApplicationId>
+	</PropertyGroup>
+
+	<PropertyGroup Condition="'$(Configuration)|$(TargetFramework)|$(Platform)'=='Debug|net8.0|AnyCPU'">
+	  <CheckForOverflowUnderflow>True</CheckForOverflowUnderflow>
+	  <ApplicationTitle>Aex Films</ApplicationTitle>
+	  <ApplicationId>com.chess0mate1.aexfilms.view.maui</ApplicationId>
+	</PropertyGroup>
+
+	<PropertyGroup Condition="'$(Configuration)|$(TargetFramework)|$(Platform)'=='Debug|net8.0-ios|AnyCPU'">
+	  <CheckForOverflowUnderflow>True</CheckForOverflowUnderflow>
+	  <ApplicationTitle>Aex Films</ApplicationTitle>
+	  <ApplicationId>com.chess0mate1.aexfilms.view.maui</ApplicationId>
+	</PropertyGroup>
+
+	<PropertyGroup Condition="'$(Configuration)|$(TargetFramework)|$(Platform)'=='Release|net8.0|AnyCPU'">
+	  <CheckForOverflowUnderflow>True</CheckForOverflowUnderflow>
+	  <ApplicationTitle>Aex Films</ApplicationTitle>
+	  <ApplicationId>com.chess0mate1.aexfilms.view.maui</ApplicationId>
+	</PropertyGroup>
+
+	<PropertyGroup Condition="'$(Configuration)|$(TargetFramework)|$(Platform)'=='Release|net8.0-ios|AnyCPU'">
+	  <CheckForOverflowUnderflow>True</CheckForOverflowUnderflow>
+	  <ApplicationTitle>Aex Films</ApplicationTitle>
+	  <ApplicationId>com.chess0mate1.aexfilms.view.maui</ApplicationId>
 	</PropertyGroup>
 
 	<ItemGroup>
@@ -69,12 +100,9 @@
 	</ItemGroup>
 
 	<ItemGroup>
-		<PackageReference Include="Chess0Mate1.DataAccess.AppSettings.Core" Version="1.0.0" />
 		<PackageReference Include="Chess0Mate1.View.Maui.Core" Version="1.1.0" />
-		<PackageReference Include="CommunityToolkit.Maui" Version="7.0.0" />
 		<PackageReference Include="MetroLog.Maui" Version="2.1.0" />
-		<PackageReference Include="Microsoft.EntityFrameworkCore.Sqlite" Version="8.0.0" />
-		<PackageReference Include="Microsoft.Maui.Controls" Version="8.0.3" />
+		<PackageReference Include="Microsoft.Maui.Controls" Version="$(MauiVersion)" />
 		<PackageReference Include="Microsoft.Maui.Controls.Compatibility" Version="$(MauiVersion)" />
 		<PackageReference Include="Syncfusion.Maui.ListView" Version="23.2.6" />
 	</ItemGroup>
