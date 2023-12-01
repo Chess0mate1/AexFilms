@@ -6,7 +6,7 @@ public partial class FiltersSelectionPage : ContentPage
 {
     public FiltersSelectionPage(IFiltersSelectionVm vm)
     {
-        InitializeComponent();
         BindingContext = vm;
+        InitializeComponent();
     }
 }
