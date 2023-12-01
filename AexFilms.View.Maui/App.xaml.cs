@@ -54,9 +54,7 @@ public partial class App : Application
                 errorPage :
                 new AppShell();
         }
-        void MakeInitialLog()
-        {
+        void MakeInitialLog() => 
             logger.LogInformation("{App} start\n***", nameof(App));
-        }
     }
 }

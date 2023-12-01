@@ -20,10 +20,6 @@ namespace AexFilms.ViewModel.ViewModels.Filtering.Filters.ActorFilter;
 /// <summary>
 ///     View model for actor collection filter selection.
 /// </summary>
-/// <remarks>
-///     Initializes a new instance of the <see cref="ActorCollectionFilterSelectionVm"/> class 
-///     with the required dependencies and initial values.
-/// </remarks>
 /// <param name="_alertService">The service for displaying alerts.</param>
 /// <param name="_logger">The logger for recording log information related to this view model.</param>
 /// <param name="_actorCollectionGettableRepository">The repository for retrieving actor collections.</param>
