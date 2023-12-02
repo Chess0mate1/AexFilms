@@ -3,7 +3,20 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.9.34310.174
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AexFilms.View.Maui", "AexFilms.View.Maui\AexFilms.View.Maui.csproj", "{341F48D5-8B35-4757-BE6B-1565421EFA74}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AexFilms.View.Maui", "AexFilms.View.Maui\AexFilms.View.Maui.csproj", "{341F48D5-8B35-4757-BE6B-1565421EFA74}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AexFilms.UnitTesting", "AexFilms.UnitTesting\AexFilms.UnitTesting.csproj", "{7CBA7A38-F372-4C1B-9BF4-29CD5F90F432}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AexFilms.DataAccess", "AexFilms.DataAccess\AexFilms.DataAccess.csproj", "{1AF9889B-D153-4C28-98D5-53C15D06DB79}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AexFilms.Core", "AexFilms.Core\AexFilms.Core.csproj", "{47EC8B24-7D8E-43C2-9CDB-F94CA24E4EEA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AexFilms.ViewModel", "AexFilms.ViewModel\AexFilms.ViewModel.csproj", "{E515CA82-37C0-4E68-BF54-49A4948038CE}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{AC536EC3-1831-47B1-B6B4-D0D145B80D20}"
+	ProjectSection(SolutionItems) = preProject
+		.editorconfig = .editorconfig
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -17,6 +30,22 @@ Global
 		{341F48D5-8B35-4757-BE6B-1565421EFA74}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{341F48D5-8B35-4757-BE6B-1565421EFA74}.Release|Any CPU.Build.0 = Release|Any CPU
 		{341F48D5-8B35-4757-BE6B-1565421EFA74}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{7CBA7A38-F372-4C1B-9BF4-29CD5F90F432}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7CBA7A38-F372-4C1B-9BF4-29CD5F90F432}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7CBA7A38-F372-4C1B-9BF4-29CD5F90F432}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7CBA7A38-F372-4C1B-9BF4-29CD5F90F432}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1AF9889B-D153-4C28-98D5-53C15D06DB79}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1AF9889B-D153-4C28-98D5-53C15D06DB79}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1AF9889B-D153-4C28-98D5-53C15D06DB79}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1AF9889B-D153-4C28-98D5-53C15D06DB79}.Release|Any CPU.Build.0 = Release|Any CPU
+		{47EC8B24-7D8E-43C2-9CDB-F94CA24E4EEA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{47EC8B24-7D8E-43C2-9CDB-F94CA24E4EEA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{47EC8B24-7D8E-43C2-9CDB-F94CA24E4EEA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{47EC8B24-7D8E-43C2-9CDB-F94CA24E4EEA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E515CA82-37C0-4E68-BF54-49A4948038CE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E515CA82-37C0-4E68-BF54-49A4948038CE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E515CA82-37C0-4E68-BF54-49A4948038CE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E515CA82-37C0-4E68-BF54-49A4948038CE}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
