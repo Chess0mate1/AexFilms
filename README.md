@@ -21,16 +21,13 @@
 ## Table Of Contents
 
 * [About the Project](#about-the-project)
-* [Built With](#built-with)
 * [Getting Started](#getting-started)
   * [Prerequisites](#prerequisites)
   * [Installation](#installation)
-* [Usage](#usage)
-* [Roadmap](#roadmap)
+* [Roadmap](#roadmap) 
 * [Contributing](#contributing)
 * [License](#license)
 * [Authors](#authors)
-* [Acknowledgements](#acknowledgements)
 
 ## About The Project
 
@@ -41,11 +38,12 @@
 
 This is a test task for an application using (`Maui, Ef Core, Sqlite, Mvvm, Xunit`) and designed to search for films by filters.
 
-Do you want to get started?
-* link to the last [release](https://github.com/Chess0mate1/AexFilms/releases/tag/v1.0.0-alpha)
+Do you want to download the app?
+* See the [last release](https://github.com/Chess0mate1/AexFilms/releases/tag/v1.0.0-alpha).
+* Also see the [manual](https://github.com/Chess0mate1/AexFilms/wiki/User's-manual).
 
-Do you want to understand how to use it?
-* link to the [wiki](https://github.com/Chess0mate1/AexFilms/wiki)
+Do you want to understand Architecture?
+* Well, see the [description](https://github.com/Chess0mate1/AexFilms/wiki/Architecture).
 
 ## Getting Started
 
@@ -76,33 +74,36 @@ git clone https://github.com/Chess0mate1/AexFilms.git
 dotnet restore
 ```
 
-## Usage
-
-_For more examples, please refer to the [Wiki](https://github.com/Chess0mate1/AexFilms/wiki)_
-
 ## Roadmap
 
-See the [open issues](https://github.com/Chess0mate1/AexFilms/issues) for a list of proposed features (and known issues).
+To study the history of the project, see:
+
+- [open issues](https://github.com/Chess0mate1/AexFilms/issues?q=is%3Aopen+is%3Aissue).
+
+- [closed issues](https://github.com/Chess0mate1/AexFilms/issues?q=is%3Aissue+is%3Aclosed).
+
+- [project](https://github.com/users/Chess0mate1/projects/6/views/1).
 
 ## Contributing
 
 Contributions are what make the open source community such an amazing place to be learn, inspire, and create. Any contributions you make are **greatly appreciated**.
 * If you have suggestions for adding or removing projects, feel free to [open an issue](https://github.com/Chess0mate1/AexFilms/issues/new) to discuss it, or directly create a pull request after you edit the *README.md* file with necessary changes.
+* Make sure you follow the [conventions](https://github.com/Chess0mate1/AexFilms/wiki/Coding-Styles).
 * Please make sure you check your spelling and grammar.
 * Create individual PR for each suggestion.
-* Please also read through the [Code Of Conduct](https://github.com/Chess0mate1/AexFilms/blob/main/CODE_OF_CONDUCT.md) before posting your first idea as well.
+* Please also read through the [Code Of Conduct](https://github.com/Chess0mate1/AexFilms/blob/master/CODE_OF_CONDUCT.md) before posting your first idea as well.
 
 ### Creating A Pull Request
 
 1. Fork the Project
-2. Create your Feature () Branch (`git checkout -b develop/#999-feature-add_support_for_paranoid`)
+2. Create your Feature Branch (`git checkout -b develop/#999-feature-add_support_for_paranoid`)
 3. Commit your Changes (`git commit -m 'Add paranoid support from the FBI, FSB, SBU and other special services'`)
 4. Push to the Branch (`git push origin develop/#999-feature-add_support_for_paranoid`)
 5. Open a Pull Request
 
 ## License
 
-Distributed under the MIT License. See [LICENSE](https://github.com/Chess0mate1/AexFilms/blob/main/LICENSE.md) for more information.
+Distributed under the MIT License. See [LICENSE](https://github.com/Chess0mate1/AexFilms/blob/master/LICENSE.txt) for more information.
 
 ## Authors
 
